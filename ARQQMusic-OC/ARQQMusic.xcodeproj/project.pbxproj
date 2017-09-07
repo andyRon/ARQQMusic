@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF7DF9631F60EB6A007859AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7DF9621F60EB6A007859AE /* AppDelegate.m */; };
+		EF7DF9691F60EB6A007859AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7DF9671F60EB6A007859AE /* Main.storyboard */; };
+		EF7DF96B1F60EB6A007859AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF7DF96A1F60EB6A007859AE /* Assets.xcassets */; };
+		EF7DF96E1F60EB6A007859AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7DF96C1F60EB6A007859AE /* LaunchScreen.storyboard */; };
+		EF7DF9711F60EB6A007859AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7DF9701F60EB6A007859AE /* main.m */; };
+		EF7DF97B1F60EB6B007859AE /* ARQQMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7DF97A1F60EB6B007859AE /* ARQQMusicTests.m */; };
+		EF7DF9861F60EB6B007859AE /* ARQQMusicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7DF9851F60EB6B007859AE /* ARQQMusicUITests.m */; };
+		EF7DF9EC1F612749007859AE /* ARPlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7DF9EB1F612749007859AE /* ARPlayingViewController.m */; };
+		EF7DF9EF1F6127EF007859AE /* ARLrcLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7DF9EE1F6127EF007859AE /* ARLrcLabel.m */; };
+		EF7DF9F21F6129B8007859AE /* ARLrcTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7DF9F11F6129B8007859AE /* ARLrcTableViewCell.m */; };
+		EF7DF9F51F612C6C007859AE /* ARLrcView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7DF9F41F612C6C007859AE /* ARLrcView.m */; };
+		EF7DF9F91F613273007859AE /* ARLrcLine.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7DF9F81F613273007859AE /* ARLrcLine.m */; };
+		EF7DF9FD1F613776007859AE /* ARLrcTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7DF9FC1F613776007859AE /* ARLrcTool.m */; };
+		EF7DFA021F61399E007859AE /* ARAVdioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7DFA011F61399E007859AE /* ARAVdioTool.m */; };
+		EF7DFA051F613A60007859AE /* ARMusicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7DFA041F613A60007859AE /* ARMusicTool.m */; };
+		EF7DFA081F613AB9007859AE /* ARMusicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7DFA071F613AB9007859AE /* ARMusicModel.m */; };
+		EF7DFA231F6141FA007859AE /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7DFA221F6141FA007859AE /* NSString+Extension.m */; };
+		EF7DFA251F61422D007859AE /* CALayer+PauseAimate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7DFA241F61422D007859AE /* CALayer+PauseAimate.m */; };
+		EF7DFA551F6158BE007859AE /* bb@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA2A1F6158BE007859AE /* bb@2x.jpg */; };
+		EF7DFA561F6158BE007859AE /* bb_icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA2B1F6158BE007859AE /* bb_icon@2x.jpg */; };
+		EF7DFA571F6158BE007859AE /* dzq@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA2C1F6158BE007859AE /* dzq@2x.jpg */; };
+		EF7DFA581F6158BE007859AE /* dzq_icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA2D1F6158BE007859AE /* dzq_icon@2x.jpg */; };
+		EF7DFA591F6158BE007859AE /* eason@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA2E1F6158BE007859AE /* eason@2x.jpg */; };
+		EF7DFA5A1F6158BE007859AE /* eason_icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA2F1F6158BE007859AE /* eason_icon@2x.jpg */; };
+		EF7DFA5B1F6158BE007859AE /* jay@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA301F6158BE007859AE /* jay@2x.jpg */; };
+		EF7DFA5C1F6158BE007859AE /* jay_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA311F6158BE007859AE /* jay_icon@2x.png */; };
+		EF7DFA5D1F6158BE007859AE /* jj@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA321F6158BE007859AE /* jj@2x.jpg */; };
+		EF7DFA5E1F6158BE007859AE /* jj_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA331F6158BE007859AE /* jj_icon@2x.png */; };
+		EF7DFA671F6158BE007859AE /* zxy@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA3C1F6158BE007859AE /* zxy@2x.jpg */; };
+		EF7DFA681F6158BE007859AE /* zxy_icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA3D1F6158BE007859AE /* zxy_icon@2x.jpg */; };
+		EF7DFA6B1F6158BE007859AE /* 120125029.lrc in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA411F6158BE007859AE /* 120125029.lrc */; };
+		EF7DFA6C1F6158BE007859AE /* I Want It That Way.lrc in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA421F6158BE007859AE /* I Want It That Way.lrc */; };
+		EF7DFA6D1F6158BE007859AE /* 14945107.lrc in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA431F6158BE007859AE /* 14945107.lrc */; };
+		EF7DFA6E1F6158BE007859AE /* 235319.lrc in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA441F6158BE007859AE /* 235319.lrc */; };
+		EF7DFA701F6158BE007859AE /* 309769.lrc in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA461F6158BE007859AE /* 309769.lrc */; };
+		EF7DFA771F6158BE007859AE /* I Want It That Way.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA4E1F6158BE007859AE /* I Want It That Way.mp3 */; };
+		EF7DFA781F6158BE007859AE /* 14945107.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA4F1F6158BE007859AE /* 14945107.mp3 */; };
+		EF7DFA791F6158BE007859AE /* 235319.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA501F6158BE007859AE /* 235319.mp3 */; };
+		EF7DFA7B1F6158BE007859AE /* 309769.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA521F6158BE007859AE /* 309769.mp3 */; };
+		EF7DFA7D1F6158BE007859AE /* Musics.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF7DFA541F6158BE007859AE /* Musics.plist */; };
+		EFEDE9471F61988300F781DF /* Shape of You.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFEDE9461F61988200F781DF /* Shape of You.jpg */; };
+		EFEDE9491F61989100F781DF /* Shape of You.lrc in Resources */ = {isa = PBXBuildFile; fileRef = EFEDE9481F61989100F781DF /* Shape of You.lrc */; };
+		EFEDE94B1F6198A400F781DF /* Shape of You.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EFEDE94A1F6198A300F781DF /* Shape of You.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF7DF9771F60EB6B007859AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF7DF9561F60EB6A007859AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF7DF95D1F60EB6A007859AE;
+			remoteInfo = ARQQMusic;
+		};
+		EF7DF9821F60EB6B007859AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF7DF9561F60EB6A007859AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF7DF95D1F60EB6A007859AE;
+			remoteInfo = ARQQMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF7DF95E1F60EB6A007859AE /* ARQQMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARQQMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7DF9611F60EB6A007859AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF7DF9621F60EB6A007859AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF7DF9681F60EB6A007859AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF7DF96A1F60EB6A007859AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF7DF96D1F60EB6A007859AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF7DF96F1F60EB6A007859AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF7DF9701F60EB6A007859AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF7DF9761F60EB6B007859AE /* ARQQMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARQQMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7DF97A1F60EB6B007859AE /* ARQQMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARQQMusicTests.m; sourceTree = "<group>"; };
+		EF7DF97C1F60EB6B007859AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF7DF9811F60EB6B007859AE /* ARQQMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARQQMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7DF9851F60EB6B007859AE /* ARQQMusicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARQQMusicUITests.m; sourceTree = "<group>"; };
+		EF7DF9871F60EB6B007859AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF7DF9EA1F612749007859AE /* ARPlayingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARPlayingViewController.h; sourceTree = "<group>"; };
+		EF7DF9EB1F612749007859AE /* ARPlayingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARPlayingViewController.m; sourceTree = "<group>"; };
+		EF7DF9ED1F6127EF007859AE /* ARLrcLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARLrcLabel.h; sourceTree = "<group>"; };
+		EF7DF9EE1F6127EF007859AE /* ARLrcLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARLrcLabel.m; sourceTree = "<group>"; };
+		EF7DF9F01F6129B8007859AE /* ARLrcTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARLrcTableViewCell.h; sourceTree = "<group>"; };
+		EF7DF9F11F6129B8007859AE /* ARLrcTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARLrcTableViewCell.m; sourceTree = "<group>"; };
+		EF7DF9F31F612C6C007859AE /* ARLrcView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARLrcView.h; sourceTree = "<group>"; };
+		EF7DF9F41F612C6C007859AE /* ARLrcView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARLrcView.m; sourceTree = "<group>"; };
+		EF7DF9F71F613273007859AE /* ARLrcLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARLrcLine.h; sourceTree = "<group>"; };
+		EF7DF9F81F613273007859AE /* ARLrcLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARLrcLine.m; sourceTree = "<group>"; };
+		EF7DF9FB1F613776007859AE /* ARLrcTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARLrcTool.h; sourceTree = "<group>"; };
+		EF7DF9FC1F613776007859AE /* ARLrcTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARLrcTool.m; sourceTree = "<group>"; };
+		EF7DFA001F61399E007859AE /* ARAVdioTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARAVdioTool.h; sourceTree = "<group>"; };
+		EF7DFA011F61399E007859AE /* ARAVdioTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARAVdioTool.m; sourceTree = "<group>"; };
+		EF7DFA031F613A60007859AE /* ARMusicTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMusicTool.h; sourceTree = "<group>"; };
+		EF7DFA041F613A60007859AE /* ARMusicTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARMusicTool.m; sourceTree = "<group>"; };
+		EF7DFA061F613AB9007859AE /* ARMusicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARMusicModel.h; sourceTree = "<group>"; };
+		EF7DFA071F613AB9007859AE /* ARMusicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARMusicModel.m; sourceTree = "<group>"; };
+		EF7DFA211F6141AC007859AE /* NSString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		EF7DFA221F6141FA007859AE /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		EF7DFA241F61422D007859AE /* CALayer+PauseAimate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+PauseAimate.m"; sourceTree = "<group>"; };
+		EF7DFA261F614267007859AE /* CALayer+PauseAimate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+PauseAimate.h"; sourceTree = "<group>"; };
+		EF7DFA2A1F6158BE007859AE /* bb@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bb@2x.jpg"; sourceTree = "<group>"; };
+		EF7DFA2B1F6158BE007859AE /* bb_icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bb_icon@2x.jpg"; sourceTree = "<group>"; };
+		EF7DFA2C1F6158BE007859AE /* dzq@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dzq@2x.jpg"; sourceTree = "<group>"; };
+		EF7DFA2D1F6158BE007859AE /* dzq_icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dzq_icon@2x.jpg"; sourceTree = "<group>"; };
+		EF7DFA2E1F6158BE007859AE /* eason@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "eason@2x.jpg"; sourceTree = "<group>"; };
+		EF7DFA2F1F6158BE007859AE /* eason_icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "eason_icon@2x.jpg"; sourceTree = "<group>"; };
+		EF7DFA301F6158BE007859AE /* jay@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jay@2x.jpg"; sourceTree = "<group>"; };
+		EF7DFA311F6158BE007859AE /* jay_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jay_icon@2x.png"; sourceTree = "<group>"; };
+		EF7DFA321F6158BE007859AE /* jj@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jj@2x.jpg"; sourceTree = "<group>"; };
+		EF7DFA331F6158BE007859AE /* jj_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jj_icon@2x.png"; sourceTree = "<group>"; };
+		EF7DFA3C1F6158BE007859AE /* zxy@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "zxy@2x.jpg"; sourceTree = "<group>"; };
+		EF7DFA3D1F6158BE007859AE /* zxy_icon@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "zxy_icon@2x.jpg"; sourceTree = "<group>"; };
+		EF7DFA411F6158BE007859AE /* 120125029.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 120125029.lrc; sourceTree = "<group>"; };
+		EF7DFA421F6158BE007859AE /* I Want It That Way.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "I Want It That Way.lrc"; sourceTree = "<group>"; };
+		EF7DFA431F6158BE007859AE /* 14945107.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 14945107.lrc; sourceTree = "<group>"; };
+		EF7DFA441F6158BE007859AE /* 235319.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 235319.lrc; sourceTree = "<group>"; };
+		EF7DFA461F6158BE007859AE /* 309769.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 309769.lrc; sourceTree = "<group>"; };
+		EF7DFA4E1F6158BE007859AE /* I Want It That Way.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "I Want It That Way.mp3"; sourceTree = "<group>"; };
+		EF7DFA4F1F6158BE007859AE /* 14945107.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 14945107.mp3; sourceTree = "<group>"; };
+		EF7DFA501F6158BE007859AE /* 235319.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 235319.mp3; sourceTree = "<group>"; };
+		EF7DFA521F6158BE007859AE /* 309769.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 309769.mp3; sourceTree = "<group>"; };
+		EF7DFA541F6158BE007859AE /* Musics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Musics.plist; sourceTree = "<group>"; };
+		EFEDE9461F61988200F781DF /* Shape of You.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Shape of You.jpg"; sourceTree = "<group>"; };
+		EFEDE9481F61989100F781DF /* Shape of You.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Shape of You.lrc"; sourceTree = "<group>"; };
+		EFEDE94A1F6198A300F781DF /* Shape of You.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Shape of You.mp3"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF7DF95B1F60EB6A007859AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7DF9731F60EB6B007859AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7DF97E1F60EB6B007859AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF7DF9551F60EB6A007859AE = {
+			isa = PBXGroup;
+			children = (
+				EF7DF9601F60EB6A007859AE /* ARQQMusic */,
+				EF7DF9791F60EB6B007859AE /* ARQQMusicTests */,
+				EF7DF9841F60EB6B007859AE /* ARQQMusicUITests */,
+				EF7DF95F1F60EB6A007859AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF7DF95F1F60EB6A007859AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF7DF95E1F60EB6A007859AE /* ARQQMusic.app */,
+				EF7DF9761F60EB6B007859AE /* ARQQMusicTests.xctest */,
+				EF7DF9811F60EB6B007859AE /* ARQQMusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF7DF9601F60EB6A007859AE /* ARQQMusic */ = {
+			isa = PBXGroup;
+			children = (
+				EF7DFA271F61428F007859AE /* Other */,
+				EF7DF9FF1F61393C007859AE /* Controller */,
+				EF7DF9FE1F61377D007859AE /* Tool */,
+				EF7DF9FA1F6135CC007859AE /* Model */,
+				EF7DF9F61F612C79007859AE /* View */,
+				EF7DF96F1F60EB6A007859AE /* Info.plist */,
+				EF7DF9671F60EB6A007859AE /* Main.storyboard */,
+				EF7DF9931F60EB95007859AE /* Supporting Files */,
+			);
+			path = ARQQMusic;
+			sourceTree = "<group>";
+		};
+		EF7DF9791F60EB6B007859AE /* ARQQMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF7DF97A1F60EB6B007859AE /* ARQQMusicTests.m */,
+				EF7DF97C1F60EB6B007859AE /* Info.plist */,
+			);
+			path = ARQQMusicTests;
+			sourceTree = "<group>";
+		};
+		EF7DF9841F60EB6B007859AE /* ARQQMusicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF7DF9851F60EB6B007859AE /* ARQQMusicUITests.m */,
+				EF7DF9871F60EB6B007859AE /* Info.plist */,
+			);
+			path = ARQQMusicUITests;
+			sourceTree = "<group>";
+		};
+		EF7DF9931F60EB95007859AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF7DFA281F6158BE007859AE /* Resources */,
+				EF7DF96A1F60EB6A007859AE /* Assets.xcassets */,
+				EF7DF96C1F60EB6A007859AE /* LaunchScreen.storyboard */,
+				EF7DF9701F60EB6A007859AE /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF7DF9F61F612C79007859AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF7DF9ED1F6127EF007859AE /* ARLrcLabel.h */,
+				EF7DF9EE1F6127EF007859AE /* ARLrcLabel.m */,
+				EF7DF9F01F6129B8007859AE /* ARLrcTableViewCell.h */,
+				EF7DF9F11F6129B8007859AE /* ARLrcTableViewCell.m */,
+				EF7DF9F31F612C6C007859AE /* ARLrcView.h */,
+				EF7DF9F41F612C6C007859AE /* ARLrcView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF7DF9FA1F6135CC007859AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF7DF9F71F613273007859AE /* ARLrcLine.h */,
+				EF7DF9F81F613273007859AE /* ARLrcLine.m */,
+				EF7DFA061F613AB9007859AE /* ARMusicModel.h */,
+				EF7DFA071F613AB9007859AE /* ARMusicModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF7DF9FE1F61377D007859AE /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				EF7DF9FB1F613776007859AE /* ARLrcTool.h */,
+				EF7DF9FC1F613776007859AE /* ARLrcTool.m */,
+				EF7DFA001F61399E007859AE /* ARAVdioTool.h */,
+				EF7DFA011F61399E007859AE /* ARAVdioTool.m */,
+				EF7DFA031F613A60007859AE /* ARMusicTool.h */,
+				EF7DFA041F613A60007859AE /* ARMusicTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		EF7DF9FF1F61393C007859AE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF7DF9EA1F612749007859AE /* ARPlayingViewController.h */,
+				EF7DF9EB1F612749007859AE /* ARPlayingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF7DFA271F61428F007859AE /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EF7DF9611F60EB6A007859AE /* AppDelegate.h */,
+				EF7DF9621F60EB6A007859AE /* AppDelegate.m */,
+				EF7DFA211F6141AC007859AE /* NSString+Extension.h */,
+				EF7DFA221F6141FA007859AE /* NSString+Extension.m */,
+				EF7DFA261F614267007859AE /* CALayer+PauseAimate.h */,
+				EF7DFA241F61422D007859AE /* CALayer+PauseAimate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		EF7DFA281F6158BE007859AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF7DFA291F6158BE007859AE /* Images */,
+				EF7DFA3E1F6158BE007859AE /* Lrcs */,
+				EF7DFA491F6158BE007859AE /* MP3s */,
+				EF7DFA541F6158BE007859AE /* Musics.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF7DFA291F6158BE007859AE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EFEDE9461F61988200F781DF /* Shape of You.jpg */,
+				EF7DFA2A1F6158BE007859AE /* bb@2x.jpg */,
+				EF7DFA2B1F6158BE007859AE /* bb_icon@2x.jpg */,
+				EF7DFA2C1F6158BE007859AE /* dzq@2x.jpg */,
+				EF7DFA2D1F6158BE007859AE /* dzq_icon@2x.jpg */,
+				EF7DFA2E1F6158BE007859AE /* eason@2x.jpg */,
+				EF7DFA2F1F6158BE007859AE /* eason_icon@2x.jpg */,
+				EF7DFA301F6158BE007859AE /* jay@2x.jpg */,
+				EF7DFA311F6158BE007859AE /* jay_icon@2x.png */,
+				EF7DFA321F6158BE007859AE /* jj@2x.jpg */,
+				EF7DFA331F6158BE007859AE /* jj_icon@2x.png */,
+				EF7DFA3C1F6158BE007859AE /* zxy@2x.jpg */,
+				EF7DFA3D1F6158BE007859AE /* zxy_icon@2x.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		EF7DFA3E1F6158BE007859AE /* Lrcs */ = {
+			isa = PBXGroup;
+			children = (
+				EFEDE9481F61989100F781DF /* Shape of You.lrc */,
+				EF7DFA411F6158BE007859AE /* 120125029.lrc */,
+				EF7DFA421F6158BE007859AE /* I Want It That Way.lrc */,
+				EF7DFA431F6158BE007859AE /* 14945107.lrc */,
+				EF7DFA441F6158BE007859AE /* 235319.lrc */,
+				EF7DFA461F6158BE007859AE /* 309769.lrc */,
+			);
+			path = Lrcs;
+			sourceTree = "<group>";
+		};
+		EF7DFA491F6158BE007859AE /* MP3s */ = {
+			isa = PBXGroup;
+			children = (
+				EFEDE94A1F6198A300F781DF /* Shape of You.mp3 */,
+				EF7DFA4E1F6158BE007859AE /* I Want It That Way.mp3 */,
+				EF7DFA4F1F6158BE007859AE /* 14945107.mp3 */,
+				EF7DFA501F6158BE007859AE /* 235319.mp3 */,
+				EF7DFA521F6158BE007859AE /* 309769.mp3 */,
+			);
+			path = MP3s;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF7DF95D1F60EB6A007859AE /* ARQQMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7DF98A1F60EB6B007859AE /* Build configuration list for PBXNativeTarget "ARQQMusic" */;
+			buildPhases = (
+				EF7DF95A1F60EB6A007859AE /* Sources */,
+				EF7DF95B1F60EB6A007859AE /* Frameworks */,
+				EF7DF95C1F60EB6A007859AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARQQMusic;
+			productName = ARQQMusic;
+			productReference = EF7DF95E1F60EB6A007859AE /* ARQQMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF7DF9751F60EB6B007859AE /* ARQQMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7DF98D1F60EB6B007859AE /* Build configuration list for PBXNativeTarget "ARQQMusicTests" */;
+			buildPhases = (
+				EF7DF9721F60EB6B007859AE /* Sources */,
+				EF7DF9731F60EB6B007859AE /* Frameworks */,
+				EF7DF9741F60EB6B007859AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF7DF9781F60EB6B007859AE /* PBXTargetDependency */,
+			);
+			name = ARQQMusicTests;
+			productName = ARQQMusicTests;
+			productReference = EF7DF9761F60EB6B007859AE /* ARQQMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF7DF9801F60EB6B007859AE /* ARQQMusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7DF9901F60EB6B007859AE /* Build configuration list for PBXNativeTarget "ARQQMusicUITests" */;
+			buildPhases = (
+				EF7DF97D1F60EB6B007859AE /* Sources */,
+				EF7DF97E1F60EB6B007859AE /* Frameworks */,
+				EF7DF97F1F60EB6B007859AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF7DF9831F60EB6B007859AE /* PBXTargetDependency */,
+			);
+			name = ARQQMusicUITests;
+			productName = ARQQMusicUITests;
+			productReference = EF7DF9811F60EB6B007859AE /* ARQQMusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF7DF9561F60EB6A007859AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = andyron;
+				TargetAttributes = {
+					EF7DF95D1F60EB6A007859AE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					EF7DF9751F60EB6B007859AE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF7DF95D1F60EB6A007859AE;
+					};
+					EF7DF9801F60EB6B007859AE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF7DF95D1F60EB6A007859AE;
+					};
+				};
+			};
+			buildConfigurationList = EF7DF9591F60EB6A007859AE /* Build configuration list for PBXProject "ARQQMusic" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF7DF9551F60EB6A007859AE;
+			productRefGroup = EF7DF95F1F60EB6A007859AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF7DF95D1F60EB6A007859AE /* ARQQMusic */,
+				EF7DF9751F60EB6B007859AE /* ARQQMusicTests */,
+				EF7DF9801F60EB6B007859AE /* ARQQMusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF7DF95C1F60EB6A007859AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7DFA771F6158BE007859AE /* I Want It That Way.mp3 in Resources */,
+				EF7DFA5E1F6158BE007859AE /* jj_icon@2x.png in Resources */,
+				EF7DFA7D1F6158BE007859AE /* Musics.plist in Resources */,
+				EF7DFA5C1F6158BE007859AE /* jay_icon@2x.png in Resources */,
+				EFEDE9471F61988300F781DF /* Shape of You.jpg in Resources */,
+				EF7DFA781F6158BE007859AE /* 14945107.mp3 in Resources */,
+				EF7DFA561F6158BE007859AE /* bb_icon@2x.jpg in Resources */,
+				EF7DFA5B1F6158BE007859AE /* jay@2x.jpg in Resources */,
+				EF7DF96E1F60EB6A007859AE /* LaunchScreen.storyboard in Resources */,
+				EF7DFA681F6158BE007859AE /* zxy_icon@2x.jpg in Resources */,
+				EF7DFA571F6158BE007859AE /* dzq@2x.jpg in Resources */,
+				EF7DFA5A1F6158BE007859AE /* eason_icon@2x.jpg in Resources */,
+				EF7DFA791F6158BE007859AE /* 235319.mp3 in Resources */,
+				EF7DFA6C1F6158BE007859AE /* I Want It That Way.lrc in Resources */,
+				EF7DFA5D1F6158BE007859AE /* jj@2x.jpg in Resources */,
+				EF7DFA671F6158BE007859AE /* zxy@2x.jpg in Resources */,
+				EF7DFA591F6158BE007859AE /* eason@2x.jpg in Resources */,
+				EF7DFA701F6158BE007859AE /* 309769.lrc in Resources */,
+				EFEDE94B1F6198A400F781DF /* Shape of You.mp3 in Resources */,
+				EF7DFA581F6158BE007859AE /* dzq_icon@2x.jpg in Resources */,
+				EF7DFA6D1F6158BE007859AE /* 14945107.lrc in Resources */,
+				EF7DF96B1F60EB6A007859AE /* Assets.xcassets in Resources */,
+				EF7DFA7B1F6158BE007859AE /* 309769.mp3 in Resources */,
+				EF7DFA6B1F6158BE007859AE /* 120125029.lrc in Resources */,
+				EF7DFA551F6158BE007859AE /* bb@2x.jpg in Resources */,
+				EF7DFA6E1F6158BE007859AE /* 235319.lrc in Resources */,
+				EF7DF9691F60EB6A007859AE /* Main.storyboard in Resources */,
+				EFEDE9491F61989100F781DF /* Shape of You.lrc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7DF9741F60EB6B007859AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7DF97F1F60EB6B007859AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF7DF95A1F60EB6A007859AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7DF9F21F6129B8007859AE /* ARLrcTableViewCell.m in Sources */,
+				EF7DF9EF1F6127EF007859AE /* ARLrcLabel.m in Sources */,
+				EF7DFA081F613AB9007859AE /* ARMusicModel.m in Sources */,
+				EF7DFA251F61422D007859AE /* CALayer+PauseAimate.m in Sources */,
+				EF7DFA021F61399E007859AE /* ARAVdioTool.m in Sources */,
+				EF7DF9FD1F613776007859AE /* ARLrcTool.m in Sources */,
+				EF7DF9F91F613273007859AE /* ARLrcLine.m in Sources */,
+				EF7DFA231F6141FA007859AE /* NSString+Extension.m in Sources */,
+				EF7DF9711F60EB6A007859AE /* main.m in Sources */,
+				EF7DF9F51F612C6C007859AE /* ARLrcView.m in Sources */,
+				EF7DF9EC1F612749007859AE /* ARPlayingViewController.m in Sources */,
+				EF7DFA051F613A60007859AE /* ARMusicTool.m in Sources */,
+				EF7DF9631F60EB6A007859AE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7DF9721F60EB6B007859AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7DF97B1F60EB6B007859AE /* ARQQMusicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7DF97D1F60EB6B007859AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7DF9861F60EB6B007859AE /* ARQQMusicUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF7DF9781F60EB6B007859AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF7DF95D1F60EB6A007859AE /* ARQQMusic */;
+			targetProxy = EF7DF9771F60EB6B007859AE /* PBXContainerItemProxy */;
+		};
+		EF7DF9831F60EB6B007859AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF7DF95D1F60EB6A007859AE /* ARQQMusic */;
+			targetProxy = EF7DF9821F60EB6B007859AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF7DF9671F60EB6A007859AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF7DF9681F60EB6A007859AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF7DF96C1F60EB6A007859AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF7DF96D1F60EB6A007859AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF7DF9881F60EB6B007859AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF7DF9891F60EB6B007859AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF7DF98B1F60EB6B007859AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZHNA975N38;
+				INFOPLIST_FILE = ARQQMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyron.ARQQMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF7DF98C1F60EB6B007859AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZHNA975N38;
+				INFOPLIST_FILE = ARQQMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyron.ARQQMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF7DF98E1F60EB6B007859AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZHNA975N38;
+				INFOPLIST_FILE = ARQQMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyron.ARQQMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARQQMusic.app/ARQQMusic";
+			};
+			name = Debug;
+		};
+		EF7DF98F1F60EB6B007859AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZHNA975N38;
+				INFOPLIST_FILE = ARQQMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyron.ARQQMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARQQMusic.app/ARQQMusic";
+			};
+			name = Release;
+		};
+		EF7DF9911F60EB6B007859AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZHNA975N38;
+				INFOPLIST_FILE = ARQQMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyron.ARQQMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARQQMusic;
+			};
+			name = Debug;
+		};
+		EF7DF9921F60EB6B007859AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZHNA975N38;
+				INFOPLIST_FILE = ARQQMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyron.ARQQMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARQQMusic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF7DF9591F60EB6A007859AE /* Build configuration list for PBXProject "ARQQMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7DF9881F60EB6B007859AE /* Debug */,
+				EF7DF9891F60EB6B007859AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF7DF98A1F60EB6B007859AE /* Build configuration list for PBXNativeTarget "ARQQMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7DF98B1F60EB6B007859AE /* Debug */,
+				EF7DF98C1F60EB6B007859AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF7DF98D1F60EB6B007859AE /* Build configuration list for PBXNativeTarget "ARQQMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7DF98E1F60EB6B007859AE /* Debug */,
+				EF7DF98F1F60EB6B007859AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF7DF9901F60EB6B007859AE /* Build configuration list for PBXNativeTarget "ARQQMusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7DF9911F60EB6B007859AE /* Debug */,
+				EF7DF9921F60EB6B007859AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF7DF9561F60EB6A007859AE /* Project object */;
+}
